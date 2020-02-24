@@ -7,5 +7,5 @@ def getVtxPos( shapeNode ) :
 	for i in vtxIndexList :
 		curPointPosition = cmds.xform( str(shapeNode)+".pnts["+str(i)+"]", query=True, translation=True, worldSpace=True )    # [1.1269192869360154, 4.5408735275268555, 1.3387055339628269]
 		vtxWorldPosition.append( curPointPosition )
-
+		print('test')
 	return vtxWorldPosition
